@@ -1,3 +1,5 @@
+from tasks import add_task, show_tasks
+
 name = input("What is your name: ")
 print(f"Welcome, {name}")
 
@@ -9,9 +11,6 @@ while True:
     if task == "end":
         break
 
-    tasks.append(task)
+    add_task(tasks, task)
 
-print("Your tasks:")
-
-for task in tasks:
-    print(task)
+show_tasks(tasks)
