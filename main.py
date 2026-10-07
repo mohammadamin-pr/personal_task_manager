@@ -1,6 +1,7 @@
-from tasks import add_task, show_tasks
+from tasks import add_task, show_tasks, save_tasks
 
 name = input("What is your name: ")
+
 print(f"Welcome, {name}")
 
 tasks = []
@@ -13,4 +14,5 @@ while True:
 
     add_task(tasks, task)
 
+save_tasks(tasks)
 show_tasks(tasks)
