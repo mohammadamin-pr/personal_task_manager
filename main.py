@@ -1,6 +1,5 @@
 from dotenv import load_dotenv
 import os
-
 from tasks import add_task, show_tasks, save_tasks
 
 load_dotenv()
@@ -27,7 +26,13 @@ while True:
     if task == "end":
         break
 
-    add_task(tasks, task)
+    priority = input("Enter priority (low/medium/high): ").lower()
+
+    while priority not in ["low", "medium", "high"]:
+        print("Invalid priority, please choose low or medium or high.")
+        priority = input("Enter priority (low/medium/high): ").lower()
+
+    add_task(tasks, task, priority)
 
 save_tasks(tasks)
 show_tasks(tasks)
