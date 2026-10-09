@@ -29,7 +29,7 @@ while True:
     priority = input("Enter priority (low/medium/high): ").lower()
 
     while priority not in ["low", "medium", "high"]:
-        print("Invalid priority, please choose low or medium or high.")
+        print("Invalid priority! Enter low, medium, or high.")
         priority = input("Enter priority (low/medium/high): ").lower()
 
     add_task(tasks, task, priority)
