@@ -1,5 +1,5 @@
 # Personal Task Manager
-A simple task manager built with python
+A simple task manager built with Python
 ![Static Badge](https://img.shields.io/badge/python-blue?logo=python&logoColor=white)
 
 
@@ -8,6 +8,13 @@ A simple task manager built with python
 - save tasks
 - load saved tasks
 - admin mode
+- set task priority
+
+## Task priority
+each task can have one of these priority levels:
+- low
+- medium 
+- high
 
 ## Requirements
 - Python
@@ -38,7 +45,7 @@ Install pip the required packages:
 python -m pip install -r requirements.txt
 ```
 
-## Envoirment setup
+## Envoirment Setup
 create a `.env` file in the project folder
 
 Use `.env.example` as a template
@@ -50,14 +57,14 @@ admin_pass=your_password_here
 ```
 replace `your_password here` with your own admin password
 
-## run the program
+## Run the Program
 run the main file:
 ```bash
 python main.py
 ```
 
 ## Screenshot
-![run project](C:\Users\Vahedi\Desktop\personal_task_manager2\images\runproject.jpg)
+![run project](C:\Users\Vahedi\Desktop\personal_task_manager2\images\screenshot.png)
 
 ## Demo
-![demo](C:\Users\Vahedi\Desktop\personal_task_manager2\gif\demo.mp4)
+![demo](C:\Users\Vahedi\Desktop\personal_task_manager2\gif\demo.gif)
